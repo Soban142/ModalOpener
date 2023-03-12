@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(to right, red, yellow);
+}
+
+.modalBtns{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btns{
+    margin: 20px;
+    padding: 20px; 
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+}
+
+.btns:hover{
+    cursor: pointer;
+
+}
+
+.modal{
+    margin: 80px auto 0 auto;
+    background-color: white;
+    height: 500px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.modalcontent p{
+    text-align: justify;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.close{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.closebtn{
+    padding: 9px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border-width: 0px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.closebtn:hover{
+    background-color: rgb(154, 41, 41);
+    color: white;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.overlay{
+    background-color: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    opacity: 0.7;
+    z-index: -1;  
+}
+
+.hidden{
+    display: none;
+}
